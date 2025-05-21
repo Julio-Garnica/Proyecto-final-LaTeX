@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage[spanish]{babel}
+\usepackage{lmodern}
+\renewcommand{\familydefault}{sfdefault}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\definecolor{dorado}{RGB}{255,199,51}
+\definecolor{azul2}{RGB}{15,29,145}
+\usepackage{tikz}
+
+\begin{document}
+	\begin{titlepage}
+		\thispagestyle{empty}
+		\newgeometry{left=2cm, right=1cm, top=2cm, bottom=2cm}
+		\begin{tikzpicture}[overlay, fill opacity=0.8]
+			\rotatebox{-45}{\fill [azul2] (11.7,-23) rectangle (21,20);}
+			\fill [dorado] (15,-27) rectangle (16.5,4);
+		\end{tikzpicture}
+		\begin{spacing}{1.5}
+			{\huge \bfseries \noindent Universidad Nacional Autónoma de México}\\ [5pt]
+			{\Large Cálculo Diferencial e Integral II}\\ [5pt]
+			{\Large Proyecto final de \LaTeX}
+		\end{spacing}
+		
+		\begin{minipage}{2cm}
+			\hspace{0.5cm}\rotatebox{90}{{\Large}}
+		\end{minipage} \hfill
+		\begin{minipage}{2.4cm}
+			\begin{spacing}{5}
+				{\color{black}\fontsize{60}{70} \selectfont \bfseries 2\\0\\2\\5}
+			\end{spacing}
+			
+		\end{minipage}
+		\vfill
+		\begin{flushleft}
+			{\Large \color{white}
+				\textbf{Armenta Cortes Pamela} \\ [1pt]
+					Lozano Garnica Julio César \\ [8pt]
+					Perez Almazán Marcos}
+			\end{flushleft}
+			\vspace{1cm}
+		\end{titlepage}
+		
+	\end{document}     
