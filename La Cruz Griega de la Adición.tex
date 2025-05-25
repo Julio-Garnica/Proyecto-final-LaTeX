@@ -1,49 +1,37 @@
-\documentclass[11pt, a4paper]{article} % Tamaño de fuente base y tipo de papel
-\usepackage[spanish]{babel} % Soporte para idioma español
-\usepackage[utf8]{inputenc} % Codificación de entrada (para pdflatex)
-\usepackage{lmodern} % Usa la versión Latin Modern de la fuente Computer Modern, que es más moderna y nítida.
-% Opcional, para usar fuentes del sistema (requiere XeLaTeX o LuaLaTeX):
-% \usepackage{fontspec}
-% \setmainfont{Palatino Linotype} % Intenta con Palatino Linotype si la tienes
-% \setsansfont{Calibri} % Para sans-serif
-% \usepackage{microtype} % Para mejor justificación y espaciado (microtipografía)
-
-\usepackage{geometry} % Para controlar los márgenes
+\documentclass[11pt, a4paper]{article}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{geometry}
 \geometry{a4paper,
   left=1.2in,
   right=1.2in,
   top=1.2in,
   bottom=1.2in
 }
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{setspace}
 
-\usepackage{titlesec} % Para el formato de títulos
-\usepackage{fancyhdr} % Para cabeceras y pies de página
-\usepackage{setspace} % Para el interlineado
-
-% Configuración de la paginación para el pie de página
 \pagestyle{fancy}
-\fancyhf{} % Limpia la cabecera y el pie de página
-\renewcommand{\headrulewidth}{0pt} % Sin línea en la cabecera
-\fancyfoot[C]{\thepage} % Número de página centrado en el pie
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\thepage}
 
-% Ajuste de interlineado para el cuerpo del texto
-\onehalfspacing % Equivalente a 1.5 líneas, proporciona más "aire". Puedes usar \linespread{1.15} si lo prefieres más denso.
+\onehalfspacing
 
-% --- Estilo del Título del Ensayo ---
-% Un título centralizado, con tamaño y formato específicos
 \newcommand{\ensayoTitulo}[2]{%
   \begin{center}
-    \vspace*{1cm} % Espacio adicional antes del título
-    {\fontsize{24}{26}\selectfont\textbf{#1}} \\ % Título principal
-    \vspace{0.3cm} % Espacio entre título principal y subtítulo
-    {\fontsize{16}{18}\selectfont\textit{#2}} % Subtítulo
-    \vspace*{1.5cm} % Espacio después del subtítulo
+    \vspace*{1cm}
+    {\fontsize{24}{26}\selectfont\textbf{#1}} \\
+    \vspace{0.3cm}
+    {\fontsize{16}{18}\selectfont\textit{#2}}
+    \vspace*{1.5cm}
   \end{center}
 }
 
 \begin{document}
 
-% Llamada al comando del título del ensayo
 \ensayoTitulo{La Cruz Griega de la Adición:}{Un Símbolo con Historia y Significado}
 
 En el vasto universo de las matemáticas, pocos símbolos son tan omnipresentes y fundamentales como la simple cruz que denota la adición. Más allá de su aparente obviedad en nuestro uso cotidiano, la ``cruz griega'' de la adición, o el signo de más (+), encierra una fascinante historia que se entrelaza con el desarrollo del pensamiento matemático y la necesidad humana de abstraer y simplificar el mundo. Este humilde grafismo, que hoy damos por sentado, es el resultado de una evolución histórica que transformó una abreviatura en un universal icónico.
