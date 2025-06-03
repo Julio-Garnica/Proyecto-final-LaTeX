@@ -2,6 +2,8 @@
 \usepackage[T1]{fontenc}              
 \usepackage{amsmath,amssymb,amsthm}   
 \usepackage{lmodern,microtype,bm}    
+\usepackage[font=footnotesize]{caption}  
+\usepackage{url}
 \usepackage{graphicx}
 \usepackage[utf8]{inputenc}           
 \usepackage[english,spanish]{babel}   
@@ -23,7 +25,7 @@
 
 \maketitle
 
-Este ensayo comenta la sección titulada \enquote{Épsilons, deltas y la invención de los números reales}, que forma parte del capítulo \enquote{Cálculo / Análisis} del libro \textit{El lenguaje de las matemáticas}, escrito por Raúl Rojas Gonzaléz. 
+Este ensayo comenta la sección titulada \enquote{Épsilons, deltas y la invención de los números reales}, que forma parte del capítulo \enquote{Cálculo / Análisis} del libro \textit{El lenguaje de las matemáticas. Historias de sus símbolos}~\cite{rojas}, escrito por Raúl Rojas Gonzaléz. 
 
 \section*{Épsilons y deltas.}
 
@@ -31,23 +33,23 @@ Me parece muy curioso cómo es que surge la necesidad de ponerle nombre a un con
 
 Que nos refiramos a estas ideas con una sola letra y además sean letras griegas que a mi parecer poseen de una gran estética, me parece elegante y muy concreto, pues al trabajar con ellas es muy práctico referirnos únicamente a una épsilon, en lugar de expresar todo el concepto de forma extensa y díficil de procesar. En este sentido, creo que tanto el concepto mismo, como la idea de  referirnos a él, demuestran la gran genialidad de las personas que los inventaron.
 
-En cuanto a como es que el autor nos presenta la información sobre este tema, me parece adecuado; pues a pesar de exponer únicamente los conceptos de manera intuitiva y resumida, considero que logra pintar en nuestras mentes una primera idea muy sólida de lo que es tratar con estos \enquote{intervalos} y de lo que se busca llegar con ellos. Hablando desde mi experiencia personal, haber tenido un gráfico como lo es la \textit{ Figura 1: Una sucesión convergente}, en mi primer intento por cursar Cálculo I, hubiera sido sin duda, una experiencia mucho mejor a lo que fue tratar de abstraer sin éxito un concepto al que nunca había estado expuesto y que no generó en mí otra cosa que no fuera frustración y decepción. Sentimiento que al parecer es muy común, pues el mismo autor refiere a este tema como \enquote{aterrorizante} para todos aquellos que nos aventuramos a cursar los primeros semestres de la carrera de matemáticas.
+En cuanto a como es que el autor nos presenta la información sobre este tema, me parece adecuado; pues a pesar de exponer únicamente los conceptos de manera intuitiva y resumida, considero que logra pintar en nuestras mentes una primera idea muy sólida de lo que es tratar con estos \enquote{intervalos} y de lo que se busca llegar con ellos. Hablando desde mi experiencia personal, haber tenido un gráfico como lo es la figura~\ref{fig: sucesion_convergente} \cite{rojas}, en mi primer intento por cursar Cálculo Diferencial e Integral I, hubiera sido sin duda, una experiencia mucho mejor a lo que fue tratar de abstraer sin éxito un concepto al que nunca había estado expuesto y que no generó en mí otra cosa que no fuera frustración y decepción. Sentimiento que al parecer es muy común, pues el mismo autor refiere a este tema como \enquote{aterrorizante} para todos aquellos que nos aventuramos a cursar los primeros semestres de la carrera de matemáticas.
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.5\linewidth]{FIGURA V.14. Una sucesión convergente}
-    \caption{Una sucesión convergente}
-    \label{fig:sucesion_convergente}
+    \caption{Una sucesión convergente (Rojas González, 2018, p. 147). Imagen fotografiada por el autor.}
+    \label{fig: sucesion_convergente}
 \end{figure}
 
 \section*{Invención de los números reales.}
 
-Más adelante en el texto, el autor ofrece una breve introducción a la historia de la invención de los números reales. Decir “breve” quizá se queda corto, pues en comparación con el libro \textit{Un acercamiento a los fundamentos del Cálculo}, del profesor Fernández, su exposición resulta mínima. No obstante, logra rescatar elementos fundamentales, como la aparición de los números irracionales, y me parece particularmente acertada la manera en que menciona los huecos que existirían en la recta numérica si estos números no formaran parte del sistema. Esta imagen me resulta muy poderosa, ya que permite al estudiante comprender con mayor claridad la necesidad de completar esa recta, y apreciar con entusiasmo las contribuciones de Cauchy, Dedekind y Cantor al proponer modelos formales y \textit{completos} que describen rigurosamente a los números reales.
+Más adelante en el texto, el autor ofrece una breve introducción a la historia de la invención de los números reales. Decir “breve” quizá se queda corto, pues en comparación con el libro \textit{Un acercamiento a los fundamentos del Cálculo. El infinito y los números reales}~\cite{fernández}, del profesor Fernández, su exposición resulta mínima. No obstante, logra rescatar elementos fundamentales, como la aparición de los números irracionales, y me parece particularmente acertada la manera en que menciona los huecos que existirían en la recta numérica si estos números no formaran parte del sistema. Esta imagen me resulta muy poderosa, ya que permite al estudiante comprender con mayor claridad la necesidad de completar esa recta, y apreciar con entusiasmo las contribuciones de Cauchy, Dedekind y Cantor al proponer modelos formales y \textit{completos} que describen rigurosamente a los números reales.
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.5\linewidth]{Recta de los números reales}
-    \caption{Recta de los números reales}
+    {\caption*{\footnotesize Recta real: Representación de números reales. Imagen tomada de \url{https://evulpo.com/es/es/dashboard/lesson/es-m-bac-01numbers-and-operations-01numbers-02the-real-line}  (s.f.).}}
     \label{fig:recta_reales}
 \end{figure}
 
@@ -56,5 +58,24 @@ Sin embargo, considero que el autor comete un ligero error al utilizar su ejempl
 En este contexto, también resulta interesante pensar cómo la construcción rigurosa de los números reales representa un punto de inflexión en la historia de las matemáticas. Durante siglos, los matemáticos trabajaron con una noción intuitiva de número que era útil pero insuficiente para fundamentar el análisis con total precisión. La aparición de definiciones formales, como las cortaduras de Dedekind o las sucesiones de Cauchy, no solo resolvió problemas técnicos, sino que dio a las matemáticas una base sólida para definir continuidad, límites y derivadas sin depender de la intuición geométrica.
 
 Por otro lado, el hecho de que existan distintas construcciones posibles para los números reales también es una lección sobre la riqueza y flexibilidad del pensamiento matemático. No es que haya una única forma \enquote{correcta} de llegar a los reales, sino que diferentes enfoques pueden describir la misma estructura desde perspectivas complementarias. Esta multiplicidad de caminos hacia un mismo objeto da cuenta del nivel de abstracción que caracteriza a las matemáticas modernas, y puede servir de inspiración para estudiantes que se enfrentan por primera vez a estos temas aparentemente áridos.
+
+\newpage
+
+\section*{Conclusión}
+
+En conjunto, la exposición del autor sobre las ideas de épsilon y delta, así como la invención de los números reales, permite apreciar tanto la profundidad como la belleza de conceptos que a menudo resultan intimidantes para los estudiantes. La combinación de explicaciones intuitivas y visuales ofrece una entrada accesible a temas que son fundamentales para el análisis matemático.
+
+Este tipo de textos, aunque breves, pueden servir como una valiosa introducción o refuerzo para quienes se enfrentan por primera vez a estos temas. No solo ayudan a comprender mejor los fundamentos, sino que también inspiran curiosidad por seguir explorando la historia y el desarrollo formal de las matemáticas.
+
+\newpage
+
+\begin{thebibliography} {99}
+	\bibitem{rojas}
+	Raúl Rojas González. (2018). \emph{El lenguaje de las matemáticas. Historias de sus símbolos}.  Fondo de Cultura Económica. Capítulo consultado: “Cálculo / Análisis”, pp. 146–149. Imagen de la Figura 1 (p. 147) fotografiada por el autor del ensayo.
+	\bibitem{fernández}
+	Javier Fernández García. (2017). \emph{Un acercamiento a los fundamentos del Cálculo. El infinito y los números reales}. Dirección General de Publicaciones y Fomento Editorial.
+	\bibitem{recta}
+	Recta real: Representación de números reales. (s.f.). evulpo. https://evulpo.com/es/es/dashboard/lesson/es-m-bac-01numbers-and-operations-01numbers-02the-real-line
+\end{thebibliography}
 
 \end {document}
